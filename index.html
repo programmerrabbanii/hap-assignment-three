@@ -9,6 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- font awesome cdn link here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+          body {
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -57,7 +68,10 @@
                       <a class="bg-red-500 px-6 py-3 text-base rounded-lg text-white capitalize cursor-pointer">Register Interest</a>
 
                     </div>
-                    <i class=" cursor-pointer px-4 text-3xl fa-regular fa-moon"></i>
+                    <div>
+                        <i id="theme-toggle" class=" cursor-pointer px-4 text-3xl fa-regular fa-moon"></i>
+
+                    </div>
                   </div>
             </div>
          </section>
@@ -501,7 +515,7 @@
             </div>
 
         </section>
-    </footer>
-    
+    </footer> 
+    <script src="./js/dark.js"></script>
 </body>
 </html>
